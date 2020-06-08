@@ -1,2 +1,14 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div>
+  <aside>
+    <div>
+      <h3><%= @user.name %></h3>
+    </div>
+  </aside>
+  <div>
+    <ul>
+      <li><a href="/" class="nav-link <%= 'active' if current_page?(user_path(@user)) %>">Tasklist  <span class="badge badge-secondary"><%= @count_tasks %></span></a></li>
+      <li><a href="#">Followings</a></li>
+      <li><a href="#">Followers</a></li>
+    </ul>
+  </div>
+</div>
