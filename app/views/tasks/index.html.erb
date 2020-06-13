@@ -16,7 +16,7 @@
     <li>
       <div>
         <div>
-          <%= link_to task.user.name, user_path(task.user) %>　<%= link_to task.id, task %>  　<span class="text-muted">登録日 <%= task.created_at %></span>
+          <%= task.user.name %>　<%= link_to task.id, task %>  　<span class="text-muted">登録日 <%= task.created_at %></span>
         </div>
         <div>
           <p><%= task.status %> &gt; <%= task.content %></p>

@@ -4,7 +4,6 @@
     <div>
       <ul>
         <% if logged_in? %>
-          <li><%= link_to current_user.name, user_path(current_user) %></li>
           <li><%= link_to 'Logout', logout_path, method: :delete %></li>
         <% else %>
           <li class="nav-item"><%= link_to 'Signup', signup_path, class: 'nav-link' %></li>
